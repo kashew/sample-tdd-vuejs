@@ -6,6 +6,8 @@
       Sign in with Google
     </g-signin-button>
 
+    <div class="g-signin2" @data-onsuccess="onSignInSuccess"></div>
+
     <div>{{ this.$store.state.auth }}</div>
   </div>
 </template>
@@ -32,6 +34,7 @@ export default {
       'getProfile'
     ]),
     onSignInSuccess (googleUser) {
+      console.log(googleUser)
       const auth = this.$store.state.auth
       auth.accessToken = googleUser.getAuthResponse().id_token
       auth.isLoggedIn = true
@@ -52,6 +55,10 @@ export default {
 <style scoped>
 .login {
   text-align: center;
+}
+
+.g-signin2 {
+  display: inline-block;
 }
 
 .g-signin-button {

@@ -6,10 +6,12 @@ module.exports = {
   src_folders: ['test/e2e/specs'],
   output_folder: 'test/e2e/reports',
   custom_assertions_path: ['test/e2e/custom-assertions'],
+  custom_commands_path: ['test/e2e/custom-commands'],
 
   selenium: {
     start_process: true,
     server_path: require('selenium-server').path,
+    log_path: '',
     host: '127.0.0.1',
     port: 4444,
     cli_args: {
