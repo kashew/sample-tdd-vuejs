@@ -42,8 +42,7 @@ module.exports = {
     }
 
     function then_the_user_is_redirected_to_the_dashboard() {
-      browser.pause(60000)
-      browser.assert.urlContains('Dashboard')
+      browser.waitForElementPresent('div.dashboard', 1000);
     }
   }
 }

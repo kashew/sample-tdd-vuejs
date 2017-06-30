@@ -1,6 +1,5 @@
 exports.command = function(selector, profile, callback) {
     var client = this
-    console.log('Profile: ' + profile)
 
     var lastArgument = Array.prototype.slice.call(arguments, 0).pop()
     if (typeof (lastArgument) === 'function') {
