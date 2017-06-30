@@ -1,8 +1,15 @@
-# kobold-ui
+# sample-tdd-vuejs
 
-> A Vue.js project
+> VueJS Project with Login integration utilizing Google 0Auth.
 
-This project is currently in development.  If you are interested in the user stories being developed on, please visit the [Trello Board](https://trello.com/b/SPCriPXy/dnd-companion-application).
+The purpose of the project is to show an example of a feature implemented with VueJS using BDD.
+
+Feature Implemented:
+* Google 0Auth integration
+
+Testing Frameworks:
+* Karma/Mocha/Chai (Unit)
+* Nightwatch (E2E)
 
 ## Build Setup
 
@@ -28,5 +35,3 @@ yarn run e2e
 # run all tests
 yarn test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
